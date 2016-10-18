@@ -1,6 +1,6 @@
 /*
  * initPro - Initial webproject boilerplate
- * https://github.com/seu-nome/webproject-boilerplate
+ * https://github.com/filipeceoli/initpro
  * Copyright (c) 2016, Filipe Cezar
  * License: GPL v3
  */
