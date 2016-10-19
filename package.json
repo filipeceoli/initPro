@@ -1,6 +1,6 @@
 {
   "name": "slush-initPro",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Initial webproject boilerplate",
   "main": "slushfile.js",
   "keywords": [
