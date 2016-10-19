@@ -31,13 +31,16 @@ gulp.task('images', function(){
   return gulp.src('app/assets/images/**/*.+(png|jpg|jpeg|svg)')
   .pipe(cache(imagemin()))
   .pipe(gulp.dest('dist/assets/images'))
+  .pipe(browserSync.reload({
+    stream: true
+  }))
 });
 
 gulp.task('cleancss', function(){
   return gulp.src('app/assets/css/*.css')
   .pipe(cleanCSS())
   .pipe(gulp.dest('dist/assets/css'))
-  .pipe(browserSync.reload ({
+  .pipe(browserSync.reload({
     stream: true
   }))
 });
@@ -46,7 +49,7 @@ gulp.task('cleancss', function(){
 gulp.task('watch', ['images', 'cleancss', 'browserSync'], function(){
   gulp.watch('app/assets/images/**/*.+(png|jpg|jpeg|svg)', ['images']);
   gulp.watch('app/assets/css/*.css', ['cleancss']);
-  gulp.watch('app/*.html', browserSync.reload);
+  gulp.watch('app/*.*', browserSync.reload);
 });
 
 gulp.task('default', function(){

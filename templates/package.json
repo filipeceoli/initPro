@@ -1,7 +1,7 @@
 {
   "name": "initPro",
   "version": "0.0.1",
-  "description": "Initial webproject boilerplate.",
+  "description": "A slush generator of simple web project scaffold.",
   "main": "gulpfile.js",
   "author": "Filipe Cezar @filipeceoli",
   "license": "GPL v3",
